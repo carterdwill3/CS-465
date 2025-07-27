@@ -1,0 +1,110 @@
+<!-- 
+    Homepage Template - Carter Williams
+    CS-465 Full Stack Development
+    16 July 2025
+-->
+
+<!-- Hero Section -->
+<section class="hero-section bg-primary text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">{{pageHeader.title}}</h1>
+                <p class="lead mb-4">{{pageHeader.strapline}}</p>
+                <p class="mb-4">{{heroSection.description}}</p>
+                
+                <div class="hero-buttons">
+                    <a href="/traveler" class="btn btn-light btn-lg me-3">
+                        <i class="fas fa-search me-2"></i>{{heroSection.buttonText}}
+                    </a>
+                    <a href="/traveler/contact" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 text-center">
+                <img src="/images/hero-travel.jpg" alt="Travel destinations" 
+                     class="img-fluid rounded shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold mb-4">Why Choose Travlr Getaways?</h2>
+                <p class="lead text-muted">We make travel planning effortless and memorable</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            {{#each features}}
+            <div class="col-lg-4 text-center">
+                <div class="feature-box p-4">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-{{icon}} fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">{{title}}</h4>
+                    <p class="text-muted">{{description}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- Quick Stats Section -->
+<section class="stats-section py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-item">
+                    <h3 class="display-4 fw-bold text-primary">50+</h3>
+                    <p class="text-muted">Countries</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-item">
+                    <h3 class="display-4 fw-bold text-primary">10K+</h3>
+                    <p class="text-muted">Happy Travelers</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-item">
+                    <h3 class="display-4 fw-bold text-primary">15+</h3>
+                    <p class="text-muted">Awards Won</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-item">
+                    <h3 class="display-4 fw-bold text-primary">24/7</h3>
+                    <p class="text-muted">Support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section bg-dark text-white py-5">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h3 class="display-6 fw-bold mb-3">Ready for Your Next Adventure?</h3>
+                <p class="lead mb-4">Browse our amazing travel packages and start planning today</p>
+                <a href="/traveler" class="btn btn-primary btn-lg">
+                    <i class="fas fa-suitcase me-2"></i>Explore Packages
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Developer Info (Hidden) -->
+<div class="d-none">
+    <!-- Created by {{developer}} - CS-465 Module 2 - 16 July 2025 -->
+</div>
