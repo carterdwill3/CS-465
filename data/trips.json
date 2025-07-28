@@ -1,0 +1,22 @@
+[   
+/* Travlr Getaways Trips
+Carter Williams - CS-465 Full Stack Development
+25 July 2025
+*/
+
+  {
+    "name": "Gale Reef",
+    "image": "images/reef1.jpg",
+    "description": "Gale Reef - Sed et augue lorem. In sit amet placerat arcu, in venenatis purus. Sed et augue lorem. In sit amet placerat arcu, in venenatis purus. Sed et augue lorem. In sit amet placerat arcu, in venenatis purus."
+  },
+  {
+    "name": "Dawson's Reef",
+    "image": "images/reef2.jpg",
+    "description": "Dawson's Reef - Sed et augue lorem. In sit amet placerat arcu, in venenatis purus. Sed et augue lorem. In sit amet placerat arcu, in venenatis purus. Sed et augue lorem. In sit amet placerat arcu, in venenatis purus."
+  },
+  {
+    "name": "Claire's Reef",
+    "image": "images/reef3.jpg",
+    "description": "Claire's Reef - Donec sed felis risus. Nulla facilisi. Donec ac augue eu lorem vehicula rutrum vel eu quam. Donec sed felis risus. Nulla facilisi. Donec ac augue eu lorem vehicula rutrum vel eu quam."
+  }
+]
