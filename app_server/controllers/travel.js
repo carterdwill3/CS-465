@@ -1,5 +1,5 @@
 /*
- * Traveler Controller - Carter Williams
+ * Travel Controller - Carter Williams
  * CS-465 Full Stack Development
  * 25 July 2025
  */

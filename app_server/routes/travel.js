@@ -1,16 +1,14 @@
 /*
- * Traveler Routes - Carter Williams  
+ * Travel Routes - Carter Williams  
  * CS-465 Full Stack Development
- * 16 July 2025
+ * 25 July 2025
  */
 
 const express = require('express');
 const router = express.Router();
-const ctrlTraveler = require('../controllers/traveler');
+const ctrlTravel = require('../controllers/travel');
 
-// Traveler routes
-router.get('/', ctrlTraveler.travelList);
-router.get('/about', ctrlTraveler.about);
-router.get('/contact', ctrlTraveler.contact);
+// Travel page route
+router.get('/', ctrlTravel.travel);
 
 module.exports = router;

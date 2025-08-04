@@ -3,31 +3,52 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Blue Lagoon Site + Bluecatonistas Beach Resort Website Template</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 <body>
     <div id="background">
-        {{> header }}
+        <div class="header">
+            <div>
+                <h1><a href="/">Blue Lagoon</a></h1>
+                <ul>
+                    <li class="selected">
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/travel">Travel</a>
+                    </li>
+                    <li>
+                        <a href="rooms.html">Rooms</a>
+                    </li>
+                    <li>
+                        <a href="activities.html">Activities</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="col-xs-6">
             <div class="classes">
                 <h3>Travel</h3>
                 <div id="divider">
-                    {{
-#each
- trips}}
+                    {{#each trips}}
                     <div class="col-xs-6">
                         <a href="/travel"><img src="{{this.image}}" alt="{{this.name}}" /></a>
                         <h3><a href="/travel">{{this.name}}</a></h3>
                         <p>{{this.description}}</p>
                     </div>
-                    {{
-/each
-}}
+                    {{/each}}
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <div>
+                <p>&copy; 2023 by Blue Lagoon. All rights reserved.</p>
+            </div>
+        </div>
     </div>
-    {{> footer }}
 </body>
 </html>
