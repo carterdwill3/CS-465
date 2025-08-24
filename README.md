@@ -8,7 +8,7 @@ The Express HTML approach was traditional server-side rendering with full page r
 happened client-side with dynamic updates and smooth transitions without page reloads. We used MongoDB because our trip and user data didn't need complex relationships that SQL requires, and the flexible document
 structure worked perfectly with our JavaScript-heavy stack.
 
-------
+---
 
 **Functionality**
 
