@@ -18,7 +18,7 @@ structure worked perfectly with our JavaScript-heavy stack.
 
 JSON is just the data format without any functions; JavaScript is the full programming language - JSON became our universal translator between the frontend and backend since it flows seamlessly from MongoDB to Express APIs to Angular components. The biggest refactoring win was creating the JWT interceptor to automatically handle authentication instead of manually adding tokens to every API call. Reusable components like the trip-card made development much faster since we could display trips consistently across different pages without rewriting code.
 
-------
+---
 
 **Testing**
 
@@ -27,7 +27,7 @@ JSON is just the data format without any functions; JavaScript is the full progr
 Testing involved verifying GET requests properly displayed data, POST/PUT requests correctly updated the database, and authentication worked by trying to access protected endpoints both logged in and logged out.
 The trickiest part was testing with JWT security since we had to ensure tokens were properly attached to requests and expired tokens were handled gracefully.
 
-------
+---
 
 **Reflection**
 
