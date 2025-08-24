@@ -4,7 +4,7 @@
 * *Compare and contrast the types of frontend development you used in your full stack project, including Express HTML, JavaScript, and the single-page application (SPA).*
 
 
-*- Why did the backend use a NoSQL MongoDB database?*
+* *- Why did the backend use a NoSQL MongoDB database?*
 
 The Express HTML approach was traditional server-side rendering with full page refreshes, while the JavaScript we used was mostly for basic manipulation. The Angular SPA was completely different - everything
 happened client-side with dynamic updates and smooth transitions without page reloads. We used MongoDB because our trip and user data didn't need complex relationships that SQL requires, and the flexible document
